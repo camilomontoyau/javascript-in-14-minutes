@@ -3,8 +3,9 @@ layout: default
 ---
 
 <header class="header">
-  <h1 class="title">JavaScript in <strong class="fourteen">14</strong> minutes</h1>
-  <p class="subtitle">by <a href="https://jgthms.com" target="_blank">Jeremy Thomas</a></p>
+  <h1 class="title">JavaScript en <strong class="fourteen">14</strong> minutos</h1>
+  <p class="subtitle">por <a href="https://jgthms.com" target="_blank">Jeremy Thomas</a></p>
+  <p class="subtitle">traducido a español por <a href="https://twitter.com/camilomontoyau" target="_blank">Camilo Montoya</a></p>
 
   <div class="block">
     <a href="https://bulma.io" target="_blank">
@@ -13,16 +14,16 @@ layout: default
   </div>
 
   <div class="content">
-    <p>Since you've already learned <a href="https://jgthms.com/web-design-in-4-minutes/" target="_blank">Web design in 4 minutes</a>, it's time to dive into the Web's main programming language: <strong>JavaScript</strong>.</p>
+    <p>Si ya aprendiste <a href="https://jgthms.com/web-design-in-4-minutes/" target="_blank">Diseño web en 4 minutos</a>, es tiempo para empezar a aprender el lenguaje de programación más importante de la web: <strong>JavaScript</strong>.</p>
   </div>
 
   <!-- Case: noscript -->
   <noscript>
     <div class="message is-warning">
       <div class="message-body">
-        To learn JavaScript, you need to enable it first!
+        Para aprender a usar javascript, necesitas habilitarlo primero!
         <br>
-        <a href="https://www.enable-javascript.com/" target="_blank" rel="nofollow">Learn how to enable JavaScript in your web browser</a>.
+        <a href="https://www.enable-javascript.com/" target="_blank" rel="nofollow">Aprende cómo habilitar javascript en tu navegador</a>.
       </div>
     </div>
     <style type="text/css">#introduction{ display: none; }</style>
@@ -33,18 +34,18 @@ layout: default
     <div class="message is-warning">
       <div class="message-body">
         <p>
-          It looks like you're on a <strong><span class="case is-mobile">mobile device</span> <span class="case is-tablet">tablet</span></strong>! 😱
+          Parece que estás en un <strong><span class="case is-mobile">dispositivo móvil </span> <span class="case is-tablet">o tablet</span></strong>! 😱
         </p>
         <p>
-          But fear not! 😊
+          Pero no tengas miedo! 😊
         </p>
         <p>
-          While this tutorial is not optimized for this platform, I still made it readable enough for you to enjoy.
+          Por ahora este tutorial no está optimizado para este tipo de plataformas, sin embargo <a href="https://jgthms.com" target="_blank">Jeremy Thomas</a> lo creo de manera que pueda ser legible en tu dispositivo.
         </p>
         <p>
-          You should however revisit it on a desktop later if you can, to experience all the features!
+          De todas formas deberías revisarlo en una computadora de escritorio más tarde si puedes, para que puedas experimentar la experiencia completa!
         </p>
-        <p>Anyway, <a onclick="showStep(1);">let's get started</a>!</p>
+        <p>Igual, <a onclick="showStep(1);">empecemos</a>!</p>
       </div>
     </div>
   </div>
@@ -52,11 +53,11 @@ layout: default
   <!-- Case: desktop -->
   <div id="introduction" class="case is-desktop">
     <div class="content">
-      <p>I believe you are using this:</p>
+      <p>Creemos que estás usando lo siguiente:</p>
 
       <div id="platform" class="detect">
         <div class="field">
-          <div class="label"><strong>Operating System</strong></div>
+          <div class="label"><strong>Sistema operativo</strong></div>
           <div class="select">
             <select id="os">
               <option value="">---</option>
@@ -67,7 +68,7 @@ layout: default
           </div>
         </div>
         <div class="field">
-          <div class="label"><strong>Web Browser</strong></div>
+          <div class="label"><strong>Navegador</strong></div>
           <div class="select">
             <select id="browser">
               <option value="">---</option>
@@ -81,7 +82,7 @@ layout: default
         </div>
       </div>
 
-      <p>If this information is correct, let's <a onclick="showStep(1);">get started</a>.</p>
+      <p>Si esta información es correcta, <a onclick="showStep(1);">empecemos</a>.</p>
     </div>
   </div>
 
@@ -89,9 +90,9 @@ layout: default
   <div id="return" class="message is-success">
     <div class="message-body">
       <p>
-        It looks that you've already been here! 😃
+        Parece que ya has estado por aquí! 😃
         <br>
-        Do you want to <a id="resume">resume from where you left off</a> or <a id="reset">start over</a>?
+        Deseas <a id="resume">donde estabas</a> o <a id="reset">quieres empezar desde cero?</a>?
       </p>
     </div>
   </div>
@@ -100,47 +101,47 @@ layout: default
 <!-- 01 -->
 <div id="step1" class="step">
   <div class="content">
-    <h2>Console <span class="stamp is-tool">tool</span></h2>
+    <h2>Console <span class="stamp is-tool">herramienta</span></h2>
 
     <p>
-      Your browser comes with a <strong>developer console</strong> that allows you to type JavaScript directly in this webpage.
+      Tu navegador viene con <strong>consola de desarrollo</strong> que te permite escribir código JavaScript directamente en esta página web.
     </p>
 
     <div class="case is-chrome not-mobile not-tablet">
-      Since you're using <strong>Google Chrome</strong>, open the JavaScript console with
-      <span class="case is-windows is-linux"><kbd class="key">Ctrl</kbd><kbd class="plus">+</kbd><kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">J</kbd> or <kbd class="key">F12</kbd></span>
+      Ya que estas usando <strong>Google Chrome</strong>, puedes abrir la consola javascript con
+      <span class="case is-windows is-linux"><kbd class="key">Ctrl</kbd><kbd class="plus">+</kbd><kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">J</kbd> o <kbd class="key">F12</kbd></span>
       <span class="case is-mac"><kbd class="key">⌥</kbd><kbd class="plus">+</kbd><kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">J</kbd></span>
     </div>
 
     <div class="case is-firefox not-mobile not-tablet">
-      Since you're using <strong>Mozilla Firefox</strong>, open the Web console with
-      <span class="case is-windows is-linux"><kbd class="key">Ctrl</kbd><kbd class="plus">+</kbd><kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">K</kbd> or <kbd class="key">F12</kbd></span>
+      Ya que estas usando <strong>Mozilla Firefox</strong>, puedes abrir la consola javascript con
+      <span class="case is-windows is-linux"><kbd class="key">Ctrl</kbd><kbd class="plus">+</kbd><kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">K</kbd> o <kbd class="key">F12</kbd></span>
       <span class="case is-mac"><kbd class="key">⌥</kbd><kbd class="plus">+</kbd><kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">K</kbd></span>
     </div>
 
     <div class="case is-edge not-mobile not-tablet">
-      Since you're using <strong>Microsoft Edge</strong>, open the JavaScript console with
+      Ya que estas usando <strong>Microsoft Edge</strong>, puedes abrir la consola javascript con
       <span class="case is-windows"><kbd class="key">F12</kbd></span>
     </div>
 
     <div class="case is-opera not-mobile not-tablet">
-      Since you're using <strong>Opera</strong>, open the JavaScript console with
+      Ya que estas usando <strong>Opera</strong>, puedes abrir la consola javascript con
       <span class="case is-windows is-linux"><kbd class="key">Ctrl</kbd><kbd class="plus">+</kbd><kbd class="key">Shift</kbd><kbd class="plus">+</kbd><kbd class="key">I</kbd></span>
       <span class="case is-mac"><kbd class="key">⌥</kbd><kbd class="plus">+</kbd><kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">I</kbd></span>
     </div>
 
     <div class="case is-safari not-mobile not-tablet">
-      <p>Since you're using <strong>Apple Safari</strong>:</p>
+      <p>Ya que estas usando <strong>Apple Safari</strong>:</p>
       <ol>
-        <li>Go to <strong>Preferences</strong> with <kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">,</kbd></li>
-        <li>Go to the <strong>Advanced</strong> tab</li>
-        <li>Enable <strong>Show Develop menu in menu bar</strong></li>
-        <li>Open the JavaScript console <kbd class="key">⌥</kbd><kbd class="plus">+</kbd><kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">C</kbd></li>
+        <li>Ve a <strong>preferencias</strong> con la combinación de teclas <kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">,</kbd></li>
+        <li>Ve a la sección <strong>Avanzado</strong></li>
+        <li>Habilita <strong>Mostrar menú de desarrollo en la barra de menú</strong></li>
+        <li>Abre la consola JavaScript <kbd class="key">⌥</kbd><kbd class="plus">+</kbd><kbd class="key">⌘</kbd><kbd class="plus">+</kbd><kbd class="key">C</kbd></li>
       </ol>
     </div>
 
-    <p>Let's see if it works!</p>
-    <p>In the console, type (or paste) the following, and press <kbd class="key">Enter</kbd></p>
+    <p>Veamos si funciona!</p>
+    <p>En la consola, escribe (o pega) lo siguiente, y presiona <kbd class="key">Enter</kbd></p>
   </div>
 
   {% capture snippet %}{% include snippets/snippet_hello_world.md %}{% endcapture %}
@@ -151,80 +152,80 @@ layout: default
 <div id="step2" class="step">
   <div class="content">
     {% include partials/gj.html %}
-    <p>You've just used <code>alert()</code>, a native <strong>JavaScript function</strong> that comes with every browser.</p>
+    <p>Acabas de usar <code>alert()</code>, una <strong> función de JavaScript </strong> nativa que viene con cada navegador.</p>
 
-    <p>But what have you <a onclick="showStep(3);">done exactly</a>?</p></div>
+    <p>Pero, qué <a onclick="showStep(3);">hiciste exactamente</a>?</p></div>
   </div>
 </div>
 
 <!-- 03 -->
 <div id="step3" class="step">
   <div class="content">
-    <h2>Functions <span class="stamp is-concept">concept</span></h2>
-    <p>You've <strong>called</strong> the <code>alert()</code> <em>function</em> with the <code>'Hello&nbsp;World!'</code> <em>parameter</em>.</p>
+    <h2>Funciones (Functions) <span class="stamp is-concept">concepto</span></h2>
+    <p>Has <strong>llamado</strong> la <em>función</em> <code>alert()</code> con el  <em>parámetro</em><code>'Hello&nbsp;World!'</code>.</p>
 
-    <p>You have basically done 4 things:</p>
+    <p>Hiciste básicamente 4 cosas:</p>
 
     <div class="stabs">
       <div class="stab">
-        <div class="stab-label">you typed the <strong>name</strong> of the function</div>
+        <div class="stab-label">Escribiste el <strong>nombre</strong> de la función</div>
         <div class="stab-code"><code class="stabilo"><span class="is-blue">alert</span>('Hello World!')</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you opened a <strong>parenthesis</strong></div>
+        <div class="stab-label">abriste un <strong>parentesis</strong></div>
         <div class="stab-code"><code class="stabilo">alert<span class="is-black">(</span>'Hello World!')</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you typed a <strong>parameter</strong></div>
+        <div class="stab-label">escribiste un <strong>parámetro</strong></div>
         <div class="stab-code"><code class="stabilo">alert(<span class="is-green">'Hello World!'</span>)</code></div>
       </div>
       <div class="stab">
-        <div class="stab-label">you <strong>closed</strong> the parenthesis</div>
+        <div class="stab-label"><strong>cerraste</strong> el parentesis</div>
         <div class="stab-code"><code class="stabilo">alert('Hello World!'<span class="is-black">)</span></code></div>
       </div>
     </div>
 
-    <p>Sometimes, there's no parameter.<br>
-    Sometimes, there's multiple parameters.<br>
-    Most of them are required, but some of them can be optional.</p>
+    <p>En ocasiones, no hay parámetro.<br>
+    En otras, hay multiples parámetros.<br>
+    La mayoría de ellos son requeridos, pero algunos pueden ser opcionales.</p>
 
-    <p>In this case, <code>alert()</code> requires only one parameter.</p>
+    <p>En este caso, <code>alert()</code> solamente requiere un parámetro.</p>
 
-    <p>But what <a onclick="showStep(4);">type of parameter</a> is that?</p>
+    <p>Pero qué <a onclick="showStep(4);">tipo (type) de parámetro</a> es ese?</p>
   </div>
 </div>
 
 <!-- 04 -->
 <div id="step4" class="step">
   <div class="content">
-    <h2>Strings <span class="stamp is-type">type</span></h2>
+    <h2>Strings <span class="stamp is-type">tipo (type)</span></h2>
 
-    <p>When you handle text, you're using <strong>strings</strong>, which are a series of <em>characters</em>. In our case, we used a series of <strong>12 characters</strong>: <code>Hello World!</code>. This includes all lowercase and uppercase letters, the space, and the exclamation point.</p>
+    <p>Cuando manejas texto, estas usando <strong>strings</strong>, los cuales son una serie de <em>caracters</em>. En nuestro caso, usamos <strong>12 caracteres</strong>: <code>Hello World!</code>. Esto incluye todas las letras minúsculas y mayúsculas, el espacio, y el símbolo de exclamación.</p>
 
-    <p>To define where the string <em>starts</em> and where it <em>ends</em>, you need to wrap it in <strong>quotes</strong> (either single <code>'</code> or double <code>"</code>).</p>
+    <p>Para definir dónde <em>empieza</em> y dónde <em>termina</em>, necesitas envolverlo en <strong>comillas</strong> (pueden ser sencillas <code>'</code> o dobles <code>"</code>).</p>
 
-    <p>When you defined the <code>'Hello World!'</code> string:</p>
+    <p>Cuando creaste el string <code>'Hello World!'</code> :</p>
 
     <ol>
-      <li>you typed a single <strong>quote</strong></li>
-      <li>you typed the <strong>12 characters</strong></li>
-      <li>you typed another single <strong>quote</strong></li>
+      <li>escribiste una <strong>comilla</strong> sencilla</li>
+      <li>luego escribiste <strong>12 caracteres</strong></li>
+      <li>luego escribiste otra <strong>comilla</strong> sencilla</li>
     </ol>
 
-    <p>What if you wanted to deal with <a onclick="showStep(5);">numbers instead</a>?</p>
+    <p>Qué pasa si quieres trabajar con <a onclick="showStep(5);">números</a>?</p>
   </div>
 </div>
 
 <!-- 05 -->
 <div id="step5" class="step">
   <div class="content">
-    <h2>Numbers <span class="stamp is-type">type</span></h2>
+    <h2>Números (Numbers) <span class="stamp is-type">tipo (type)</span></h2>
 
-    <p>Like any other programming language, JavaScript can handle <strong>numbers</strong>.</p>
+    <p>Tal como otros lenguajes de programación lo hacen, JavaScript puede trabajar con <strong>números</strong>.</p>
 
-    <p>These numbers can be big or small, with or without decimals, combined through numeric operations…</p>
+    <p>Estos números pueden ser grandes (big) o pequeños (small), con o sin decimales, combinados a través de operaciones numéricas…</p>
 
-    <p>Type or paste the following snippet in your console:</p>
+    <p>Escribe o pega el siguiente código en tu consola:</p>
   </div>
 
   {% capture snippet %}{% include snippets/snippet_numbers.md %}{% endcapture %}
